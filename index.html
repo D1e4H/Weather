@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WeatherIA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="src/icon/cloudy.png">
+
+</head>
+<body>
+<section class="contenedor">
+  <header>
+        <svg width="50" height="22" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+       <!-- Sol -->
+      <circle cx="50" cy="50" r="18" fill="#FFD700" />
+         <!-- Rayos del sol -->
+     <g stroke="#FFD700" stroke-width="4">
+     <line x1="50" y1="20" x2="50" y2="5" />
+     <line x1="50" y1="80" x2="50" y2="95" />
+     <line x1="20" y1="50" x2="5" y2="50" />
+     <line x1="80" y1="50" x2="95" y2="50" />
+     <line x1="30" y1="30" x2="18" y2="18" />
+     <line x1="70" y1="30" x2="82" y2="18" />
+     <line x1="30" y1="70" x2="18" y2="82" />
+      <line x1="70" y1="70" x2="82" y2="82" />
+     </g>
+     <!-- Nube -->
+      <g fill="#FFFFFF">
+      <ellipse cx="60" cy="60" rx="18" ry="12" />
+      <ellipse cx="45" cy="62" rx="14" ry="10" />
+      <ellipse cx="70" cy="65" rx="12" ry="9" />
+      </g>
+      </svg>
+
+      <input type="text" id="ciudadEntrada" placeholder="Enter a city">
+      <button id="botonBusqueda">     
+        <svg xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="white" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          width="13" height="13"> <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg> 
+    </button>
+
+    <div class="weathertitle">
+      <h1>Weather<bold>IA</bold></h1>
+    </div>
+     
+     
+    
+    </header>
+  <div class="container">
+
+      <div id="datosClima" class="aparecerDesdeArriba" >
+    
+        <span id="resultado"> </span>
+      </div>
+    <div class="iask">
+        <div id="respuestaIA">
+          
+        </div>
+    </div>
+  </div>
+</section> 
+
+
+  <script src="script.js" type="module"></script>
+  <script>
+    
+  </script>
+  <footer class="footer-clima">
+    <p>© 2026 WeatherAI</p>
+    <p>Powered by <span class="highlight">Cloudflare Workers AI</span> & <span class="highlight">OpenWeather</span></p>
+    <a href="https://www.flaticon.com/free-icons/rain" title="rain icons">Rain icons created by iconixar - Flaticon</a>
+</footer>
+</body>
+</html>

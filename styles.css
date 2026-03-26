@@ -1,0 +1,434 @@
+body {
+  font-family: 'Poppins', sans-serif;
+background: linear-gradient(135deg, #3f3175 0%, #503ea8 50%, #2e0466c7 100%);
+  background-repeat: no-repeat;  
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+  
+footer{
+  background-color: #2f2449   ;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+footer p, footer a{
+  margin: 5px;
+  font-size: 14px;
+  padding: 0px;
+  text-decoration: none;
+  color: #9258cb;
+}
+
+header {
+  background-color: #2f2449   ;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 47rem;
+  min-height: 1.8rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-content: center;
+  }
+
+
+
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: row;
+    background-color: #644ca4;
+    border-radius: 0px 0px 10px 10px ;
+  }
+
+  svg{
+    position: relative;
+
+  }
+  
+  h1 {
+    color: #dadada;
+    margin-left: 20px;
+    
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  input[type="text"] {
+    width: 400px;
+    font-size: 10px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; 
+    background-color: #e7e7e7;
+    border: none;
+    
+    
+  
+}
+
+.weathertitle{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  width: 150px;
+}
+  
+  #botonBusqueda{
+    font-size: 15px;
+    background-color: #9258cb ;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 7.3px;
+    padding-left: 10px;
+    border-style: none;
+    margin-right: 20px;
+}
+  
+#datosClima {
+  font-size: 18px;
+  background-color: #644ca4;
+  width: 23rem;
+  height: 23rem;
+  border-radius: 18px;
+  color: #f5f5f5;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+h2{
+  opacity: 0;
+}
+
+#respuestaIA{
+  width: 19rem;
+  min-height: 17rem;
+  font-size: 18px;
+  background-color: #3f3071;
+  border-radius: 20px 20px 20px 20px;
+
+  color: #f5f5f5;
+  
+  padding: 10px;
+  
+}
+
+
+@keyframes aparecerDesdeArriba {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+    
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+
+  }
+}
+
+bold{
+    color: #590be9;
+    font-weight: bold;
+}
+  
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+
+div.infoClima{
+  background-color: #3f3071;
+  border-radius: 10px;
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  scale: 1.00;
+  transition: all 0.3s ease-in-out ;
+  opacity: 0;
+}
+
+
+input:focus {
+    
+    outline: none;
+}
+
+#resultado{
+    background-color: #644ca4;
+    width: 85%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.infoClima svg{
+    margin: 5px;
+  
+    
+    ;
+}
+
+.infoClima h2{
+    margin-top: 0px;
+    font-size: 40px;
+    color: #f5f5f5;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    align-items: center;
+    
+}
+
+p.descripcion{
+    font-size: 14px;
+    margin: 0px;
+    color: #adabab;
+}
+
+#datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0;
+
+}
+
+.sensacionTermica{
+  margin: 0px;
+  margin-bottom: 5px;   
+}
+
+.datoHumedad{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center ;
+  justify-content: center;
+  
+}
+
+.datoHumedad svg{
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.humedad{
+  margin: 0px;
+}
+
+.datoSensacionTermica{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center ;
+  justify-content: center;
+
+
+}
+
+#resultado bold{
+  color: #ffffff;
+  font-size: 15px;
+
+}
+
+#buttonPanel{
+  width: 350px;
+  height: 100px;
+}
+
+
+#ia{
+  margin-top:70px;
+  height: 365px;
+  width: 350px;
+  background-color: #dadada;
+  pointer-events: none  ;
+  position: fixed;
+  margin-left: 600px;
+  margin-top: 70px;
+  opacity: 100%;
+}
+
+#transition{
+  margin-top: 230px; 
+  height: 30px;
+  border-radius: 30%; 
+  margin-right: 0px;
+  font-weight: bold;;
+  margin-left: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#image{
+  margin-top:70px;
+  height: 365px;
+  width: 350px;
+  background-color: #dadada;
+  opacity: 100%;
+  pointer-events: none  ;
+  position: fixed;
+  margin-left: -650px;
+  margin-top: 70px;
+}
+
+
+
+.rounded{
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 15px;
+  background-color: #644ca4;
+  color: aliceblue;
+  border-color: #644ca4;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  box-shadow: #2f2449a6 10px 10px 10px;
+  transition: 1s ease;
+}
+
+
+.aparecer{
+  animation-name: aparecer;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  
+}
+
+.iask{
+  background-color: #644ca4;
+  width: 24rem;
+  height: 23rem;
+  color: white;
+  margin: 0px;
+  border-radius: 0px 20px 20px 0px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    
+  }
+  100% {
+    opacity: 1;
+
+  }
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #3f3175;
+}
+
+@media (max-width: 768px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .iask{
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  header{
+    position: absolute;
+    top: 3.5rem;
+
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .contenedor{
+    min-height: 100%;
+    width: 100%;
+    
+  }
+
+
+  body{
+    min-height: 100vh
+  }
+
+  #datosClima, .iask {
+  height: 100%;
+  width: 100% !important; 
+  
+  box-sizing: border-box; 
+}
+
+#resultado, #respuestaIA {
+  width: 95%;            
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+}

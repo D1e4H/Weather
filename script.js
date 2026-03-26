@@ -1,4 +1,4 @@
-
+const weatherKey = window.weatherKey;
 
 let city = '';
 const k = 273.15;
